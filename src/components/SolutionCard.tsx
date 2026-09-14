@@ -125,7 +125,7 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({ problem, index }) =>
       {showSolution && (
         <div className='mt-3 space-y-2'>
           {/* Step-by-step */}
-          {problem.steps.map((step) => (
+          {(problem.steps || []).map((step) => (
             <div key={step.stepNumber} className='flex gap-3 items-start p-3 bg-slate-50 rounded-xl border border-slate-100'>
               <div className='w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5'>
                 {step.stepNumber}
