@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply font-bangla antialiased text-slate-800 min-h-screen;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #f5f3ff 80%, #faf5ff 100%);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom styles for Bengali text readability */
+.answer-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Poem text styling */
+.poem-text {
+  line-height: 2.2;
+  letter-spacing: 0.01em;
+}
+
+/* Printable styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
