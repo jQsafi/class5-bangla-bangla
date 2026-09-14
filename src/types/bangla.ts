@@ -32,7 +32,7 @@ export interface QuizQuestion {
   explanation: string;
 }
 
-export type ChapterCategory = 'kobita' | 'gadya' | 'natak' | 'byakaran';
+export type ChapterCategory = 'kobita' | 'prose' | 'natak' | 'byakaran';
 
 export interface ChapterCharacter {
   name: string;
