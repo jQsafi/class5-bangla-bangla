@@ -170,7 +170,7 @@ export const ChapterPage: React.FC<ChapterPageProps> = ({
             )}
 
             {/* Whole Story Section for Gadya */}
-            {chapter.category === 'prose' && chapter.fullText && (
+            {chapter.category === 'gadya' && chapter.fullText && (
               <div className='bg-white rounded-3xl border border-indigo-100 p-6 md:p-8 shadow-sm relative overflow-hidden'>
                 <div className='flex items-center justify-between border-b border-indigo-100/80 pb-4 mb-6'>
                   <div className='flex items-center gap-2.5'>
