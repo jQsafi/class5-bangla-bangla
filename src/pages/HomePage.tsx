@@ -15,15 +15,15 @@ interface HomePageProps {
 
 const categoryIcons: Record<string, React.ReactNode> = {
   kobita: <Feather className='w-5 h-5' />,
-  gadya: <BookOpen className='w-5 h-5' />,
+  prose: <BookOpen className='w-5 h-5' />,
   natak: <Scale className='w-5 h-5' />,
   byakaran: <Scale className='w-5 h-5' />,
 };
 
-const categoryOrder = ['kobita', 'gadya', 'byakaran', 'natak'];
+const categoryOrder = ['kobita', 'prose', 'byakaran', 'natak'];
 const categoryNames: Record<string, string> = {
   kobita: '🪶 কবিতা',
-  gadya: '📖 গদ্য',
+  prose: '📖 গদ্য',
   natak: '🎭 নাটক',
   byakaran: '📐 ব্যাকরণ',
 };
